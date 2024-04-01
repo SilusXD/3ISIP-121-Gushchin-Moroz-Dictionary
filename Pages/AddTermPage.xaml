@@ -19,15 +19,69 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Термин" Grid.Row="0" Grid.Column="0" Margin="10,0,0,0"/>
-        <TextBlock Text="Определение" Grid.Row="1" Grid.Column="0" Margin="10,0,0,0"/>
-        <TextBlock Text="Источник" Grid.Row="2" Grid.Column="0" Margin="10,0,0,0"/>
+        <TextBlock Text="Термин" 
+                   Height="50" 
+                   Grid.Row="0" 
+                   Grid.Column="0" 
+                   Margin="10,0,0,0" 
+                   FontSize="16"
+                   Foreground="White"/>
+        
+        <TextBlock Text="Определение" 
+                   Height="50" 
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   Margin="10,0,0,0" 
+                   FontSize="16"
+                   Foreground="White"/>
+        
+        <TextBlock Text="Источник" 
+                   Height="50" 
+                   Grid.Row="2" 
+                   Grid.Column="0" 
+                   Margin="10,0,0,0" 
+                   FontSize="16"
+                   Foreground="White"/>
 
-        <TextBox Text="{Binding Term}" Grid.Row="0" Grid.Column="1"/>
-        <TextBox Text="{Binding Definition}" Grid.Row="1" Grid.Column="1"/>
-        <TextBox Text="{Binding Source}" Grid.Row="2" Grid.Column="1"/>
+        <TextBox Text="{Binding Term}" 
+                 Margin="0,0,50,0"
+                 Height="50" Grid.Row="0" 
+                 Grid.Column="1" 
+                 FontSize="16"/>
+        
+        <TextBox Text="{Binding Definition}"
+                 Margin="0,0,50,0"
+                 Height="50" Grid.Row="1"
+                 Grid.Column="1" 
+                 FontSize="16"/>
+        
+        <TextBox Text="{Binding Source}" 
+                 Margin="0,0,50,0"
+                 Height="50" 
+                 Grid.Row="2" 
+                 Grid.Column="1" 
+                 FontSize="16"/>
 
-        <Button Name="btnSave" Content="Сохранить" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,0,50,0" HorizontalAlignment="Right"/>
-        <Button Name="btnCancel" Content="Отмена" Grid.Row="5" Grid.ColumnSpan="2" Margin="50,0,0,0" HorizontalAlignment="Left"/>
+        <Button Name="btnSave" 
+                Content="Сохранить" 
+                Height="50" 
+                Width="100" 
+                Grid.Row="5" 
+                Grid.ColumnSpan="2" 
+                Margin="0,10,50,0" 
+                HorizontalAlignment="Right" 
+                Click="btnSave_Click" 
+                FontSize="16"/>
+        
+        <Button Name="btnCancel" 
+                Content="Отмена" 
+                Height="50" 
+                Width="100" 
+                Grid.Row="5" 
+                Grid.ColumnSpan="2" 
+                Margin="50,0,0,0" 
+                HorizontalAlignment="Left" 
+                Click="btnCancel_Click"
+                FontSize="16" />
     </Grid>
 </Page>

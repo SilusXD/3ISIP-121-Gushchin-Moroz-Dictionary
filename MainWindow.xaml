@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3ISIP_121_Gushchin_Moroz_Dictionary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Frame Name="PagesFrame" NavigationUIVisibility="Visible" Source="/Pages/TermsPage.xaml"/>
+        Title="Словарь начинающего тестировщика"
+        Height="450" Width="800" Icon="/Images/IconDictionary.png">
+    <Grid Background="DimGray">
+        <Frame Name="PagesFrame" NavigationUIVisibility="Hidden" Source="/Pages/TermsPage.xaml"/>
     </Grid>
 </Window>
